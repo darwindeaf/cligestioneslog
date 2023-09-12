@@ -14,11 +14,13 @@ $(function() {
     $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
+            $(".back-to-top").removeClass("open")
             $(".header_navbar").removeClass("sticky");
             $(".header_navbar img").attr("src", "assets/images/logo.png");
 
             $(".header_navbar_page").removeClass("sticky");
         } else {
+            $(".back-to-top").addClass("open")
             $(".header_navbar").addClass("sticky");
             $(".header_navbar img").attr("src", "assets/images/logo-dark.png");
 
@@ -68,13 +70,13 @@ $(function() {
     //===== Back to top
 
     // Show or hide the sticky footer button
-    $(window).on('scroll', function (event) {
+    /*$(window).on('scroll', function (event) {
         if ($(this).scrollTop() > 600) {
             $('.back-to-top').fadeIn(200)
         } else {
             $('.back-to-top').fadeOut(200)
         }
-    });
+    });*/
 
 
     //Animate the scroll to yop

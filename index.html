@@ -25,10 +25,15 @@
 
     <!--====== Default CSS ======-->
     <link rel="stylesheet" href="assets/css/default.css">
-    
+
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--<link rel="stylesheet" href="assets/css/style-es.css">-->
+
+    <!--==== Swiperjs CSS ====-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 
     <!--<script data-pagespeed-no-defer>(function(){function f(a,b,d){if(a.addEventListener)a.addEventListener(b,d,!1);else if(a.attachEvent)a.attachEvent("on"+b,d);else{var c=a["on"+b];a["on"+b]=function(){d.call(this);c&&c.call(this)}}};window.pagespeed=window.pagespeed||{};var g=window.pagespeed;function k(a){this.g=[];this.f=0;this.h=!1;this.j=a;this.i=null;this.l=0;this.b=!1;this.a=0}function l(a,b){var d=b.getAttribute("data-pagespeed-lazy-position");if(d)return parseInt(d,0);var d=b.offsetTop,c=b.offsetParent;c&&(d+=l(a,c));d=Math.max(d,0);b.setAttribute("data-pagespeed-lazy-position",d);return d}
         function m(a,b){var d,c,e;if(!a.b&&(0==b.offsetHeight||0==b.offsetWidth))return!1;a:if(b.currentStyle)c=b.currentStyle.position;else{if(document.defaultView&&document.defaultView.getComputedStyle&&(c=document.defaultView.getComputedStyle(b,null))){c=c.getPropertyValue("position");break a}c=b.style&&b.style.position?b.style.position:""}if("relative"==c)return!0;e=0;"number"==typeof window.pageYOffset?e=window.pageYOffset:document.body&&document.body.scrollTop?e=document.body.scrollTop:document.documentElement&&
@@ -41,7 +46,6 @@
         
         pagespeed.lazyLoadInit(true, "/pagespeed_static/1.JiBnMqyl6S.gif");
         </script>-->
-    
 </head>
 
 <body>
@@ -118,20 +122,53 @@
             </div> <!-- container -->
         </div> <!-- header navbar -->
 
-        <div id="home" class="header_slider">
-            <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/slider-1.jpg)">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 col-md-10">
-                            <div class="slider_content">
-                                <h2 class="slider_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">SOMOS CLI GESTIONES LOGISTICAS</h2>
-                                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Con 30 años de experiencia nos hemos convertido en una de las mayores empresas de logística y transporte de carga.</p>
-                                <a href="#about" rel="nofollow" class="main-btn wow fadeInLeftBig page-scroll" data-wow-duration="1.3s" data-wow-delay="0.8s">Conócenos</a>
-                            </div> <!-- slider content -->
-                        </div>
-                    </div> <!-- row -->
-                </div> <!-- container -->
-            </div> <!-- single slider -->
+        <div id="home" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="d-flex align-items-center swiper-slide single_slider" style="background-image: url(assets/images/slider-1.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="slider_content">
+                                    <h2 class="slider_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">SOMOS CLI GESTIONES LOGISTICAS</h2>
+                                    <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Con XX años de experiencia nos hemos convertido en una de las mayores empresas de logística y transporte de carga.</p>
+                                    <a href="#about" rel="nofollow" class="main-btn wow fadeInLeftBig page-scroll hvr-underline-from-center" data-wow-duration="1.3s" data-wow-delay="0.8s">Conócenos</a>
+                                </div> <!-- slider content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                </div> <!-- single slider -->
+
+                <div class="d-flex align-items-center swiper-slide single_slider" style="background-image: url(assets/images/slider-1.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="slider_content">
+                                    <h2 class="slider_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">SOMOS CLI GESTIONES LOGISTICAS</h2>
+                                    <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Con XX años de experiencia nos hemos convertido en una de las mayores empresas de logística y transporte de carga.</p>
+                                    <a href="#about" rel="nofollow" class="main-btn wow fadeInLeftBig page-scroll hvr-underline-from-center" data-wow-duration="1.3s" data-wow-delay="0.8s">Conócenos</a>
+                                </div> <!-- slider content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                </div> <!-- single slider -->
+
+                <div class="d-flex align-items-center swiper-slide single_slider" style="background-image: url(assets/images/slider-1.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="slider_content">
+                                    <h2 class="slider_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">SOMOS CLI GESTIONES LOGISTICAS</h2>
+                                    <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Con XX años de experiencia nos hemos convertido en una de las mayores empresas de logística y transporte de carga.</p>
+                                    <a href="#about" rel="nofollow" class="main-btn wow fadeInLeftBig page-scroll hvr-underline-from-center" data-wow-duration="1.3s" data-wow-delay="0.8s">Conócenos</a>
+                                </div> <!-- slider content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                </div> <!-- single slider -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div> <!-- header slider -->
     </section>
 
@@ -180,16 +217,16 @@
     
     <!--====== ABOUT PART START ======-->
 
-    <section id="about" class="about_area pt-80 pb-130">
+    <section id="about" class="about_area pt-80 pb-130 background-color-section">
         <div class="about_bg d-none d-lg-block">
             <div class="about_bg_image bg_cover" style="background-image: url(assets/images/about_bg.jpg)"></div>
         </div> <!-- about bg -->
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="about_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                    <div class="scale_image mt-50 wow fadeInRightBig scale_image" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <img src="assets/images/about_image.jpg" alt="About">
-                    </div> <!-- about image -->
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about_content mt-50 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
@@ -203,7 +240,7 @@
                             <br><br>
                             Por otra parte, CLI GESTIONES LOGÍSTICAS S.A.C. y CLI PROYECTOS S.A.C., trabajan de la mano convencidos de que juntos cultivan el conocimiento y estimulan la creatividad, creciendo como empresa y personas.
                         </p>
-                        <a href="about.html" class="main-btn">Leer más</a>
+                        <a href="about.html" class="main-btn hvr-underline-from-center">Leer más</a>
                     </div> <!-- about content -->
                 </div>
             </div> <!-- row -->
@@ -229,7 +266,7 @@
                         <!--<div class="services_icon">
                             <i class="lni lni-compass"></i>
                         </div>-->
-                        <div class="services_image">
+                        <div class="services_image scale_image">
                             <img src="assets/images/blog-1.jpg" alt="blog">
                         </div>
                         <div class="services_content">
@@ -243,7 +280,7 @@
                         <!--<div class="services_icon">
                             <i class="lni lni-apartment"></i>
                         </div>-->
-                        <div class="services_image">
+                        <div class="services_image scale_image">
                             <img src="assets/images/service_width_03.png" alt="blog">
                         </div>
                         <div class="services_content">
@@ -257,7 +294,7 @@
                         <!--<div class="services_icon">
                             <i class="lni lni-construction"></i>
                         </div>-->
-                        <div class="services_image">
+                        <div class="services_image scale_image">
                             <img src="assets/images/service_width_04.png" alt="blog">
                         </div>
                         <div class="services_content">
@@ -271,7 +308,7 @@
                         <!--<div class="services_icon">
                             <i class="lni lni-ruler-pencil"></i>
                         </div>-->
-                        <div class="services_image">
+                        <div class="services_image scale_image">
                             <img src="assets/images/service_width_01.png" alt="blog">
                         </div>
                         <div class="services_content">
@@ -282,7 +319,7 @@
                 </div>
                 <div class="col-lg-12 col-sm-12">
                     <div class="mt-50 wow fadeInLeftBig text-center" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <a href="services.html" class="main-btn">Más información</a>
+                        <a href="services.html" class="main-btn hvr-underline-from-center">Más información</a>
                     </div>
                 </div>
             </div> <!-- row -->
@@ -293,7 +330,7 @@
     
     <!--====== GALLERY PART START ======-->
 
-    <section id="gallery" class="gallery_area pt-120 pb-130">
+    <section id="gallery" class="gallery_area pt-120 pb-130 background-color-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -356,7 +393,7 @@
                 </div>
                 <div class="col-lg-12 col-sm-12">
                     <div class="mt-50 wow fadeInLeftBig text-center" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <a href="projects.html" class="main-btn">Más proyectos</a>
+                        <a href="projects.html" class="main-btn hvr-underline-from-center">Más proyectos</a>
                     </div>
                 </div>
             </div>
@@ -367,7 +404,7 @@
     
     <!--====== COUNTER PART START ======-->
 
-    <section id="counter" class="counter_area bg_cover pt-120 pb-130" style="background-image: url(assets/images/counter.jpg)">
+    <section id="counter" class="counter_area bg_cover pt-120 pb-130" data-parallax="scroll" data-image-src="assets/images/counter.jpg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
@@ -506,7 +543,7 @@
 
             <div class="col-lg-12 col-sm-12">
                 <div class="mt-50 wow fadeInLeftBig text-center" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                    <a href="clients.html" class="main-btn">Más clientes</a>
+                    <a href="clients.html" class="main-btn hvr-underline-from-center">Más clientes</a>
                 </div>
             </div>
 
@@ -516,7 +553,7 @@
     <!--====== BRAND LOGO PART ENDS ======-->
 
     <!--====== BLOG PART START ======-->
-    <section id="blog" class="blog_area pt-120 pb-80">
+    <section id="blog" class="blog_area pt-120 pb-80 background-color-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -529,7 +566,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="single_blog mt-30">
-                        <div class="blog_image">
+                        <div class="blog_image scale_image">
                             <img src="assets/images/blog-1.jpg" alt="blog">
                         </div>
                         <div class="blog_content">
@@ -607,7 +644,7 @@
                             <p class="form-message"></p>
                             
                             <div class="single_form">
-                                <button class="main-btn">ENVIAR MENSAJE</button>
+                                <button class="main-btn hvr-underline-from-center">ENVIAR MENSAJE</button>
                             </div> <!-- single form -->
                         </form>
                     </div> <!-- contact form -->
@@ -680,7 +717,7 @@
                         <input name="password" type="password" placeholder="Contraseña">
                     </div>
                     <div class="col-lg-3 single_form">
-                        <button class="main-btn" style="width: 100%; height: 40px; line-height: 0px;">INGRESAR</button>
+                        <button class="main-btn hvr-underline-from-center" style="width: 100%; height: 40px; line-height: 0px;">INGRESAR</button>
                     </div>
                     <div class="col-lg-3 single_form">
 
@@ -759,6 +796,7 @@
 
     <!--====== Jquery js ======-->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
     
     <!--====== Bootstrap js ======-->
@@ -773,10 +811,32 @@
     <!--====== WOW js ======-->
     <script src="assets/js/wow.min.js"></script>
 
+    <!--====== Swiperjs js ======-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            //spaceBetween: 30,
+            //centeredSlides: true,
+            grabCursor: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            slideNextClass: 'swiper-slide-next'
+        });
+    </script>
     
 </body>
 
