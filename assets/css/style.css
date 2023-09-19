@@ -1266,13 +1266,20 @@ ol {
   border-radius: 40px;
 }
 
-.scale_image img {
+.scale_image_logo {
+  display: block;
+  position: relative;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.scale_image img, .scale_image_logo img {
   width: 100%;
-  transition: all 2s ease;
+  transition: all .7s ease;
   border-bottom-right-radius: 0;
 }
 
-.scale_image:hover img {
+.scale_image:hover img, .scale_image_logo:hover img {
   transform: scale(1.2);
 }
 
@@ -1370,7 +1377,7 @@ ol {
   box-shadow: 0px 3px 10px 0px rgba(213, 213, 213, 0.4);
 }
 
-.single_services .services_image img {
+.single_services .services_image img, .services_image img {
   width: 100%;
   border-radius: 20px;
 }
@@ -2252,4 +2259,12 @@ p.form-message.error.form-message.error {
 .wrapper-sections {
   width: 500%;
   height: 100%;
+}
+
+.nav-tabs li{
+  display: block;
+}
+
+.nav-item .active{
+  color: var(--primary-color) !important;
 }

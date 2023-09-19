@@ -100,89 +100,180 @@
             </div>-->
             <div class="row">
                 <div class="col-lg-12 col-sm-12 section_content">
+
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="contact_form mt-40 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                                <div class="section_title pb-25">
-                                    <h4 class="title">Ecríbenos</h4>
-                                </div> <!-- section title -->
+                        <div class="col-lg-12">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="escribenos-tab" data-toggle="tab" data-target="#escribenos" type="button" role="tab" aria-controls="escribenos" aria-selected="true">Escríbenos</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="oficinas-tab" data-toggle="tab" data-target="#oficinas" type="button" role="tab" aria-controls="oficinas" aria-selected="false">Nuestras Oficinas</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="quejas-tab" data-toggle="tab" data-target="#quejas" type="button" role="tab" aria-controls="quejas" aria-selected="false">Quejas o Reclamos</a>
+                                </li>
+                            </ul>
 
-                                <form id="contact-form" action="assets/contact.php" method="post">
-                                    <div class="single_form">
-                                        <input name="name" type="text" placeholder="Nombres y Apellidos">
-                                    </div> <!-- single form -->
+                            <div class="tab-content" id="tab-contacto">
+                                <div class="tab-pane fade show active" id="escribenos" role="tabpanel" aria-labelledby="escribenos-tab">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="contact_form mt-40">
+                                                <div class="section_title pb-25">
+                                                    <h4 class="title">Ecríbenos</h4>
+                                                </div> <!-- section title -->
 
-                                    <div class="single_form">
-                                        <input name="email" type="email" placeholder="Email">
-                                    </div> <!-- single form -->
+                                                <form id="contact-form" action="assets/contact.php" method="post">
+                                                    <div class="single_form">
+                                                        <input name="name" type="text" placeholder="Nombres y Apellidos">
+                                                    </div> <!-- single form -->
 
-                                    <div class="single_form">
-                                        <input name="enterprise" type="text" placeholder="Empresa">
-                                    </div> <!-- single form -->
+                                                    <div class="single_form">
+                                                        <input name="email" type="email" placeholder="Email">
+                                                    </div> <!-- single form -->
 
-                                    <div class="single_form">
-                                        <input name="number" type="text" placeholder="Número de contacto">
-                                    </div> <!-- single form -->
+                                                    <div class="single_form">
+                                                        <input name="enterprise" type="text" placeholder="Empresa">
+                                                    </div> <!-- single form -->
 
-                                    <div class="single_form">
-                                        <textarea name="message" placeholder="Mensaje"></textarea>
-                                    </div> <!-- single form -->
+                                                    <div class="single_form">
+                                                        <input name="number" type="text" placeholder="Número de contacto">
+                                                    </div> <!-- single form -->
 
-                                    <p class="form-message"></p>
+                                                    <div class="single_form">
+                                                        <textarea name="message" placeholder="Mensaje"></textarea>
+                                                    </div> <!-- single form -->
 
-                                    <div class="single_form">
-                                        <button class="main-btn">ENVIAR MENSAJE</button>
-                                    </div> <!-- single form -->
-                                </form>
-                            </div> <!-- contact form -->
+                                                    <p class="form-message"></p>
+
+                                                    <div class="single_form">
+                                                        <button class="main-btn">ENVIAR MENSAJE</button>
+                                                    </div> <!-- single form -->
+                                                </form>
+                                            </div> <!-- contact form -->
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="contact_info mt-40">
+                                                <div class="section_title pb-25">
+                                                    <h4 class="title">Contáctenos</h4>
+                                                </div> <!-- section title -->
+                                                <p>
+                                                    Tu socio en logística aduanera está esperando tu mensaje. En nuestro formulario te brindamos la puerta abierta para conectarte con nosotros o utiliza los detalles de contacto proporcionados. Ya sea que necesites resolver dudas, explorar posibilidades de colaboración o buscar orientación sobre soluciones logísticas, estamos comprometidos en brindarte respuestas rápidas y soluciones a medida para tu empresa.
+                                                </p>
+
+                                                <div class="single_info d-flex align-items-center">
+                                                    <div class="info_icon">
+                                                        <i class="lni lni-phone"></i>
+                                                    </div>
+                                                    <div class="info_content media-body">
+                                                        <p>Central (511) 6146900</p>
+                                                    </div>
+                                                </div> <!-- single info -->
+
+                                                <div class="single_info d-flex align-items-center">
+                                                    <div class="info_icon">
+                                                        <i class="lni lni-envelope"></i>
+                                                    </div>
+                                                    <div class="info_content media-body">
+                                                        <p>informes@cliandina.com</p>
+                                                    </div>
+                                                </div> <!-- single info -->
+
+                                                <div class="single_info d-flex align-items-center">
+                                                    <div class="info_icon">
+                                                        <i class="lni lni-world"></i>
+                                                    </div>
+                                                    <div class="info_content media-body">
+                                                        <p>www.cli.com.pe</p>
+                                                    </div>
+                                                </div> <!-- single info -->
+
+                                                <div class="single_info d-flex align-items-center">
+                                                    <div class="info_icon">
+                                                        <i class="lni lni-map"></i>
+                                                    </div>
+                                                    <div class="info_content media-body">
+                                                        <p>Av. Elmer Faucett 2000 - Int D </br>Callao - Lima, Perú</p>
+                                                    </div>
+                                                </div> <!-- single info -->
+                                            </div> <!-- contact info -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="oficinas" role="tabpanel" aria-labelledby="oficinas-tab">
+                                    <img src="assets/images/oficinas_cli.png" alt="Oficinas CLI" class="mt-30">
+                                </div>
+
+                                <div class="tab-pane fade" id="quejas" role="tabpanel" aria-labelledby="quejas-tab">
+                                    <div class="section_title pb-25 mt-40">
+                                        <h4 class="title">Quéjas o Reclamos</h4>
+                                        <p>Si tiene alguna duda, queja o reclamo que nos quisiera hacer llegar, sírvase rellenar el siguiente formulario:</p>
+                                    </div>
+
+                                    <div class="contact_form">
+                                        <form id="quejas-form" action="assets/contact.php" method="post">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="single_form">
+                                                        <input name="name" type="text" placeholder="Nombres y Apellidos">
+                                                    </div> <!-- single form -->
+
+                                                    <div class="single_form">
+                                                        <input name="enterprise" type="text" placeholder="Empresa">
+                                                    </div> <!-- single form -->
+
+                                                    <div class="single_form">
+                                                        <input name="ruc" type="text" placeholder="RUC">
+                                                    </div>
+
+                                                    <div class="single_form">
+                                                        <input name="email" type="email" placeholder="Email">
+                                                    </div> <!-- single form -->
+
+                                                    <div class="single_form">
+                                                        <input name="number" type="text" placeholder="Número de contacto">
+                                                    </div> <!-- single form -->
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <div class="single_form">
+                                                        <input name="asunto" type="text" placeholder="Asunto">
+                                                    </div>
+
+                                                    <div class="single_form">
+                                                        <textarea name="message" placeholder="Mensaje"></textarea>
+                                                    </div> <!-- single form -->
+
+                                                    <div >
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlFile1">Adjuntar documento (opcional)</label>
+                                                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="form-message"></p>
+
+                                                    <div class="single_form">
+                                                        <button class="main-btn">ENVIAR MENSAJE</button>
+                                                    </div> <!-- single form -->
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="contact_info mt-40 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                                <div class="section_title pb-25">
-                                    <h4 class="title">Contáctenos</h4>
-                                </div> <!-- section title -->
-                                <p>
-                                    Tu socio en logística aduanera está esperando tu mensaje. En nuestro formulario te brindamos la puerta abierta para conectarte con nosotros o utiliza los detalles de contacto proporcionados. Ya sea que necesites resolver dudas, explorar posibilidades de colaboración o buscar orientación sobre soluciones logísticas, estamos comprometidos en brindarte respuestas rápidas y soluciones a medida para tu empresa.
-                                </p>
+                    </div>
 
-                                <div class="single_info d-flex align-items-center">
-                                    <div class="info_icon">
-                                        <i class="lni lni-phone"></i>
-                                    </div>
-                                    <div class="info_content media-body">
-                                        <p>Central (511) 6146900</p>
-                                    </div>
-                                </div> <!-- single info -->
-
-                                <div class="single_info d-flex align-items-center">
-                                    <div class="info_icon">
-                                        <i class="lni lni-envelope"></i>
-                                    </div>
-                                    <div class="info_content media-body">
-                                        <p>informes@cliandina.com</p>
-                                    </div>
-                                </div> <!-- single info -->
-
-                                <div class="single_info d-flex align-items-center">
-                                    <div class="info_icon">
-                                        <i class="lni lni-world"></i>
-                                    </div>
-                                    <div class="info_content media-body">
-                                        <p>www.cli.com.pe</p>
-                                    </div>
-                                </div> <!-- single info -->
-
-                                <div class="single_info d-flex align-items-center">
-                                    <div class="info_icon">
-                                        <i class="lni lni-map"></i>
-                                    </div>
-                                    <div class="info_content media-body">
-                                        <p>Av. Elmer Faucett 2000 - Int D </br>Callao - Lima, Perú</p>
-                                    </div>
-                                </div> <!-- single info -->
-                            </div> <!-- contact info -->
-                        </div>
-                    </div> <!-- row -->
                 </div>
             </div>
         </div>
