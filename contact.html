@@ -111,6 +111,9 @@
                                     <a class="nav-link" id="oficinas-tab" data-toggle="tab" data-target="#oficinas" type="button" role="tab" aria-controls="oficinas" aria-selected="false">Nuestras Oficinas</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="trabaja-tab" data-toggle="tab" data-target="#trabaja" type="button" role="tab" aria-controls="trabaja" aria-selected="false">Trabaja con Nosotros</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
                                     <a class="nav-link" id="quejas-tab" data-toggle="tab" data-target="#quejas" type="button" role="tab" aria-controls="quejas" aria-selected="false">Quejas o Reclamos</a>
                                 </li>
                             </ul>
@@ -203,7 +206,73 @@
                                 </div>
 
                                 <div class="tab-pane fade" id="oficinas" role="tabpanel" aria-labelledby="oficinas-tab">
-                                    <img src="assets/images/oficinas_cli.png" alt="Oficinas CLI" class="mt-30">
+                                    <img src="assets/images/oficinas_grupo_cli.png" alt="Oficinas CLI" class="mt-30">
+                                </div>
+
+                                <div class="tab-pane fade" id="trabaja" role="tabpanel" aria-labelledby="trabaja-tab">
+                                    <div class="section_title pb-25 mt-40">
+                                        <h4 class="title">Trabaja con Nosotros</h4>
+                                        <p>Si estás interesado en ser parte de la familia Cli Gestiones Aduaneras, te invitamos a rellenar el siguiente formulario.</p>
+                                    </div>
+
+                                    <div class="contact_form">
+                                        <form id="trabaja-form" action="assets/contact.php" method="post">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="single_form">
+                                                        <input name="name" type="text" placeholder="Nombres">
+                                                    </div>
+
+                                                    <div class="single_form">
+                                                        <input name="lastname" type="text" placeholder="Apellidos">
+                                                    </div>
+
+                                                    <div class="single_form">
+                                                        <input name="email" type="email" placeholder="Email">
+                                                    </div>
+
+                                                    <div class="single_form">
+                                                        <input name="number" type="text" placeholder="Teléfono/Celular">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <div class="single_form">
+                                                        <input name="document" type="text" placeholder="Documento de identidad">
+                                                    </div>
+
+                                                    <div class="single_form">
+                                                        <select name="area" id="area">
+                                                            <option value="" selected>Área a postular</option>
+                                                            <option value="publicas">Públicas</option>
+                                                            <option value="colaboradores">Colaboradores</option>
+                                                            <option value="gerenciales">Gerenciales</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div >
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlFile1">Adjuntar documento (opcional)</label>
+                                                            <input type="file" class="form-control-file" id="exampleFormControlFile2">
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="form-message"></p>
+
+                                                    <div class="single_form">
+                                                        <button class="main-btn">ENVIAR MENSAJE</button>
+                                                    </div> <!-- single form -->
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="tab-pane fade" id="quejas" role="tabpanel" aria-labelledby="quejas-tab">
